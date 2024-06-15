@@ -1,0 +1,20 @@
+{
+  "name": "untitled1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run run-be\" \"npm run run-fe\"",
+    "run-be": "cd backend && npm run dev",
+    "run-fe": "cd frontend && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "sass": "^1.77.5"
+  }
+}
