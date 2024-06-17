@@ -2,8 +2,6 @@ import './Articles.scss';
 import {Article} from '../article/Article.tsx';
 
 export const Articles = ({articlesListItemsArray, articlesPerRow}) => {
-    console.log(articlesPerRow);
-
     const articleListItems = articlesListItemsArray.map(articlesListItem => {
 
         return(
