@@ -1,5 +1,7 @@
 import express, {Application, json, Request, Response} from "express";
 import {userRouter} from "./routers/userRouter";
+import newsRouter from "./routers/newsRouter";
+
 const cors = require("cors");
 
 const app: Application = express();
@@ -7,8 +9,8 @@ const app: Application = express();
 app.use(json());
 app.use(cors());
 
-app.use("/api", userRouter);
+app.use("/api", newsRouter);
 
-app.listen(3004, () => {
-    console.log("Successfully started server");
+app.listen(3060, () => {
+    console.log("Server started successfully :)");
 })
