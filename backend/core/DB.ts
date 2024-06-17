@@ -6,7 +6,7 @@ export class DB {
 
     constructor() {
         this.conn = mysql2.createPool({
-            database: "db_new",
+            database: "project",
             host: "localhost",
             user: "root",
             password: ""
