@@ -11,6 +11,6 @@ app.use(cors());
 
 app.use("/api", newsRouter);
 
-app.listen(3060, () => {
+app.listen(3070, () => {
     console.log("Server started successfully :)");
 })
