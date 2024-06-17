@@ -4,7 +4,7 @@ import { createBrowserRouter,
   Route,
   Navigate
 } from "react-router-dom"
-import './App.css'
+import './App.scss'
 import {Layout} from "./pages/Layout.tsx";
 import {Home} from "./pages/Home.tsx";
 import {Blog} from "./pages/Blog.tsx";

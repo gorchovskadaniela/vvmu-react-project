@@ -3,9 +3,19 @@
 \* ------------------------------------------------------------ */
 
 .header {
+	padding: 15px 0;
+	background: var(--c-white);
+	box-shadow: 0 5px 5px rgba(0,0,0,.2);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+
 	.header__logo {
-		max-width: 150px;
+		max-width: 120px;
 		display: inline-block;
+		text-decoration: none;
 	}
 
 	.header__inner {
@@ -15,7 +25,8 @@
 		justify-content: space-between;
 	}
 
-	.header__nav {
+	.header__menu {
+		margin-left: auto;
 	}
 
 	.header__nav ul {
@@ -24,5 +35,11 @@
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
+		gap: 20px;
+		font-weight: 500;
+	}
+
+	.header__nav a {
+		text-decoration: none;
 	}
 }

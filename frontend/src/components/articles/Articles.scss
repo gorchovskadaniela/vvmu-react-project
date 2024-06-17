@@ -1,0 +1,11 @@
+/* ------------------------------------------------------------ *\
+	articles
+\* ------------------------------------------------------------ */
+
+.articles {
+	.articles__items {
+		display: grid;
+		grid-template-columns: repeat(var(--columns), 1fr);
+		grid-gap: 30px 30px
+	}
+}

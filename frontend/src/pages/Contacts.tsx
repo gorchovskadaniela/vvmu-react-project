@@ -1,5 +1,7 @@
+import {Hero} from "../components/hero/Hero.tsx";
+
 export const Contacts = () => {
     return (
-        <h1>Contacts</h1>
+        <Hero title="Contacts" content="Bla bla bla bla contacts" />
     )
 }
