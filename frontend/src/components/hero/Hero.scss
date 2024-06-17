@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------ *\
+	Hero
+\* ------------------------------------------------------------ */
+
+.hero {
+	background: linear-gradient(135deg, #d0f70e 0%,#fa8ee4 75%);
+	position: relative;
+	overflow: hidden;
+
+
+	.hero__inner {
+		padding: 232px 0 140px;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		z-index: 1;
+	}
+
+	.hero__content {
+		text-align: center;
+		font-weight: 500;
+		color: var(--c-white);
+	}
+
+	.hero__content h1 {
+	}
+}

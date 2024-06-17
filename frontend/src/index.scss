@@ -1,0 +1,123 @@
+:root {
+  --fz-base: 18px;
+  --fw-base: 400;
+  --lh-base: 1.4;
+  --ff-base: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  //Colors
+  --c-white: #fff;
+  --c-black: #000;
+  --c-pink: #fa8ee4;
+  --c-limegreen: #d0f70e;
+  --c-brown: #5d5047;
+  --c-navyblue: #003266;
+  --c-magenta: #660058;
+
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ==========================================================================
+// Base
+// ==========================================================================
+
+body {
+  min-width: 320px;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-base);
+  font-size: var(--fz-base);
+  line-height: var(--lh-base);
+  color: var(--c-brown);
+  background: var(--c-white);
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+
+  @media (hover: hover) {
+    &:where(:hover, :focus-visible) {
+      text-decoration: none;
+    }
+  }
+
+  &[href^='tel'] {
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: calc(var(--lh-base) * 0.5em);
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p,
+ul,
+ol,
+dl,
+hr,
+table,
+blockquote {
+  margin-bottom: calc(var(--lh-base) * 0.5em);
+}
+
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class],
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child,
+ol:last-child,
+dl:last-child,
+table:last-child,
+blockquote:last-child {
+  margin-bottom: 0;
+}
+
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

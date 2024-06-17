@@ -1,5 +1,7 @@
+import {Hero} from "../components/hero/Hero.tsx";
+
 export const Blog = () => {
     return (
-        <h1>Blog</h1>
+        <Hero title="Blog page" content="Bla bla bla bla blog" />
     )
 }
