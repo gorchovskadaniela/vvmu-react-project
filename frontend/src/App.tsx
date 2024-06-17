@@ -8,7 +8,7 @@ import './App.scss'
 import {Layout} from "./pages/Layout.tsx";
 import {Home} from "./pages/Home.tsx";
 import {Blog} from "./pages/Blog.tsx";
-import {Contacts} from "./pages/Contacts.tsx";
+import {CreateArticle} from "./pages/CreateArticle.tsx";
 import {NotFound} from "./pages/NotFound.tsx";
 import {Form} from "./pages/Form.tsx";
 
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
         element: <Blog />
       },
       {
-        path: '/contacts',
-        element: <Contacts />
+        path: '/create-article',
+        element: <CreateArticle />
       },
       {
         path: '/',
