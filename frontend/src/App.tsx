@@ -10,6 +10,7 @@ import {Home} from "./pages/Home.tsx";
 import {Blog} from "./pages/Blog.tsx";
 import {CreateArticle} from "./pages/CreateArticle.tsx";
 import {NotFound} from "./pages/NotFound.tsx";
+import {Article} from "./pages/Article.tsx";
 import {Form} from "./pages/Form.tsx";
 
 const AppLayout = () => (
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: '/create-article',
         element: <CreateArticle />
+      },
+      {
+        path: '/article/:id',
+        element: <Article />
       },
       {
         path: '/',
