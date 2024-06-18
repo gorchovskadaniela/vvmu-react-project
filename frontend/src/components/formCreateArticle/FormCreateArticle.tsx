@@ -1,9 +1,20 @@
+import { useForm } from "react-hook-form"
 import './FormCreateArticle.scss';
 
 export const FormCreateArticle = () => {
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
+
+    const onSubmit = (data: any) => {
+        console.log({ data });
+    }
+
     return (
         <div className="form-create-article">
-            <form action="?" method="post">
+            <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="form__head">
                     <h3>You can create a simple article by filling the fields below.</h3>
                 </div>
@@ -13,7 +24,7 @@ export const FormCreateArticle = () => {
                         <label className="form__label">Title of the article</label>
 
                         <div className="form__controls">
-                            <input type="text" className="form__field" name="article-title" id="article-title"placeholder="Title" />
+                            <input type={"text"} className="form__field" name="article-title" id="article-title"placeholder="Title" />
                         </div>
                     </div>
 
@@ -29,7 +40,7 @@ export const FormCreateArticle = () => {
                         <label className="form__label">Author name</label>
 
                         <div className="form__controls">
-                            <input type="text" className="form__field" name="article-author" id="article-author"placeholder="Author name" />
+                            <input type={"text"} className="form__field" name="article-author" id="article-author"placeholder="Author name" />
                         </div>
                     </div>
 
@@ -37,7 +48,7 @@ export const FormCreateArticle = () => {
                         <label className="form__label">Author email</label>
 
                         <div className="form__controls">
-                            <input type="mail" className="form__field" name="author-email" id="author-email"placeholder="Author email" />
+                            <input type={"mail"} className="form__field" name="author-email" id="author-email"placeholder="Author email" />
                         </div>
                     </div>
 
@@ -45,13 +56,13 @@ export const FormCreateArticle = () => {
                         <label className="form__label">Upload image</label>
 
                         <div className="form__controls">
-                            <input type="file" className="form__field form__field--upload" name="article-file-upload" id="article-file-upload" placeholder="Upload image" />
+                            <input type={"file"} className="form__field form__field--upload" name="article-file-upload" id="article-file-upload" placeholder="Upload image" />
                         </div>
                     </div>
                 </div>
 
                 <div className="form__actions">
-                    <button type="submit" className="form__btn">Create new article</button>
+                    <button type={"submit"} className="form__btn">Create new article</button>
                 </div>
             </form>
         </div>
