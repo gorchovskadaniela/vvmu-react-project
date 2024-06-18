@@ -13,6 +13,10 @@ export class NewsController {
         return await this.newsModel.getAllNews();
     }
 
+    async getArticle(id:number) {
+        return await this.newsModel.getArticle(id);
+    }
+
     async createNews(data: News){
         return await this.newsModel.createNews(data);
 

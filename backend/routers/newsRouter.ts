@@ -10,6 +10,11 @@ newsRouter.get("/news", async (req: Request, res: Response) => {
     const news = await newsController.getAllNews();
     res.send(news)
 });
+newsRouter.get("/article/:id", async (req: Request, res: Response) => {
+   const {id } = req.params
+    const article:any = await newsController.getArticle(Number(id));
+    res.send(article[0])
+});
 
 newsRouter.post("/news", async (req: Request, res: Response) => {
     const body = req.body;
@@ -33,7 +38,7 @@ newsRouter.post("/news", async (req: Request, res: Response) => {
     res.send(news)
 });
 
-newsRouter.put("/news/:id", async (req: Request, res: Response) => {
+newsRouter.put("/article/:id", async (req: Request, res: Response) => {
     const { id } = req.params;
     await newsController.updateNews(Number(id), req.body);
     res.send({
