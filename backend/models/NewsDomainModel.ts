@@ -3,4 +3,5 @@ export interface NewsDomainModel {
     title: string,
     content: string,
     author: string
+    picture: string
 }
