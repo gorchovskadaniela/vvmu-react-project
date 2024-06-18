@@ -10,9 +10,9 @@ export class NewsModel extends DB {
 
     async createNews(data: News) {
         await this.conn.execute(`
-            INSERT INTO news(title, content, author)
-            VALUES(? ,? ,?)
-        `,[data.title, data.content, data.author])
+            INSERT INTO news(title, content, author, picture)
+            VALUES(? ,? ,?, ?)
+        `,[data.title, data.content, data.author, data.picture])
     }
     async updateNews (id: number, data:NewsDomainModel) {
         const userPropArray = Object.entries(data);

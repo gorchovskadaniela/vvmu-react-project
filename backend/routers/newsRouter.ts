@@ -17,7 +17,8 @@ newsRouter.post("/news", async (req: Request, res: Response) => {
         title: body.title,
         content: body.content,
         author: body.author,
-        createdAt: body.createdAt
+        createdAt: body.createdAt,
+        picture: body.picture
     }
 
     try{
