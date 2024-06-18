@@ -20,7 +20,7 @@ export const Footer = () => {
                                                       </li>
 
                                                       <li>
-                                                            <Link to="/contacts">Contacts</Link>
+                                                            <Link to="/create-article">Create Article</Link>
                                                       </li>
                                                 </ul>
                                           </nav>
