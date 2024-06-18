@@ -7,6 +7,13 @@ export class NewsModel extends DB {
         const [rows] = await this.conn.query("SELECT * FROM news");
         return rows;
     }
+    async getArticle(id:number) {
+        const [rows] = await this.conn.query("SELECT * FROM news WHERE id = ?"
+        , [id]);
+        console.log(rows)
+        return rows;
+    }
+
 
     async createNews(data: News) {
         await this.conn.execute(`

@@ -12,11 +12,14 @@ export const Form = () => {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <input type={"text"} defaultValue={"dido"} {...register("username")}/>
-            <input type={"text"} {...register("password", {
+            <input type={"text"} defaultValue={"..."} {...register("title")}/>
+            <input type={"text"} {...register("content", {
                 required: true
             })}/>
-            {errors.password && <h3>Password is required</h3>}
+            {errors.password && <h3>You need to finish your article, before applying</h3>}
+            <input type={"text"} {...register("author", {
+                required: true
+            })}/>
             <input type={"submit"}/>
         </form>
     )
