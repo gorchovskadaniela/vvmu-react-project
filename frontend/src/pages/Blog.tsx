@@ -10,7 +10,7 @@ export const Blog = () => {
                 <div className="shell">
                     <div className="section__inner">
                         <header className="section__head">
-                            <h2>That's all of our new articles</h2>
+                            <h2>That's all articles</h2>
                         </header>
 
                         <div className="section__body">
