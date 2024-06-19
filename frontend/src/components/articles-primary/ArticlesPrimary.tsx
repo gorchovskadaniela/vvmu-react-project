@@ -10,7 +10,7 @@ export const ArticlesPrimary = () => {
   useEffect(() => {
     const getNews = async () => {
       //Смени тук вместо тоя json файл да е пътя до api-то и ще работи
-      const result = await fetch("./../../public/articles.json")
+      const result = await fetch("http://localhost:3073/api/news")
       const articlesPrimary = await result.json();
       setArticlesPrimary(articlesPrimary);
     }

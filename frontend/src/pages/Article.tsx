@@ -24,7 +24,7 @@ export const Article = () => {
     }, [])
 
     const deleteArtile = () => {
-         fetch(`http://localhost:3073/api/article/${id}`, {
+         fetch(`http://localhost:3073/api/news/${id}`, {
              method:"DELETE"
         });
          navigation("/create-article")

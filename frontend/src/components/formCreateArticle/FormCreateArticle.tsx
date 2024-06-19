@@ -1,15 +1,32 @@
 import { useForm } from "react-hook-form"
 import './FormCreateArticle.scss';
+import {useNavigate} from "react-router-dom";
 
 export const FormCreateArticle = () => {
+    const navigation = useNavigate()
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        // formState: {errors},
     } = useForm();
 
     const onSubmit = (data: any) => {
-        console.log({ data });
+        fetch(`http://localhost:3073/api/news`, {
+            method: "POST",
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify({
+                title: data.title,
+                content: data.content,
+                author: data.author,
+                picture: data.picture
+            })
+
+        }).then();
+
+        navigation("/create-article")
+
     }
 
     return (
@@ -24,7 +41,7 @@ export const FormCreateArticle = () => {
                         <label className="form__label">Title of the article</label>
 
                         <div className="form__controls">
-                            <input type={"text"} className="form__field" name="article-title" id="article-title"placeholder="Title" />
+                            <input {...register("title")} type={"text"} className="form__field" name="article-title" id="article-title" placeholder="Title" />
                         </div>
                     </div>
 
@@ -32,7 +49,7 @@ export const FormCreateArticle = () => {
                         <label className="form__label">Article content</label>
 
                         <div className="form__controls">
-                            <textarea className="form__field form__field--textarea" name="article-content" id="article-content" placeholder="Content"></textarea>
+                            <textarea {...register("content", )} className="form__field form__field--textarea" name="article-content" id="article-content" placeholder="Content"></textarea>
                         </div>
                     </div>
 
@@ -40,23 +57,15 @@ export const FormCreateArticle = () => {
                         <label className="form__label">Author name</label>
 
                         <div className="form__controls">
-                            <input type={"text"} className="form__field" name="article-author" id="article-author"placeholder="Author name" />
+                            <input {...register("author", )}  type={"text"} className="form__field" name="article-author" id="article-author"placeholder="Author name" />
                         </div>
                     </div>
 
                     <div className="form__row">
-                        <label className="form__label">Author email</label>
+                        <label className="form__label">Upload image link</label>
 
                         <div className="form__controls">
-                            <input type={"mail"} className="form__field" name="author-email" id="author-email"placeholder="Author email" />
-                        </div>
-                    </div>
-
-                    <div className="form__row">
-                        <label className="form__label">Upload image</label>
-
-                        <div className="form__controls">
-                            <input type={"file"} className="form__field form__field--upload" name="article-file-upload" id="article-file-upload" placeholder="Upload image" />
+                            <input {...register("picture", )} type={"text"} className="form__field" name="image-link" id="image-link" placeholder="http://yourlink.com" />
                         </div>
                     </div>
                 </div>
