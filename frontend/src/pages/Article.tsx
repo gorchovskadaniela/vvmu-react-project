@@ -17,7 +17,6 @@ export const Article = () => {
         const getNews = async () => {
             const result = await fetch(`http://localhost:3073/api/article/${id}`)
             const news = await result.json();
-            console.log({article});
             setArticle(news);
         }
         getNews().then();
@@ -33,22 +32,24 @@ export const Article = () => {
 
     return (
         <>
-            <Hero title={article.title} content="Bla bla bla bla contacts" />
+            <Hero title={article.title} content={article.content} />
 
             <section className="section-article-single">
                 <div className="shell">
                     <div className="section__inner">
                         <div className="section__article">
-                            <div className="section__article-head">
-                                <h2>{article.title}</h2>
-                            </div>
+
 
                             <div className="section__article-info">
                                 <div className="section__article-author">
-                                    {article.author}
+                                    This article was created by: <strong>{article.author}</strong>
                                 </div>
 
                                 <button className="section__article-delete" onClick={deleteArtile}>Delete this Article</button>
+                            </div>
+
+                            <div className="section__article-image">
+                                <img src={article.picture} alt={article.title} />
                             </div>
 
                             <div className="section__article-body">

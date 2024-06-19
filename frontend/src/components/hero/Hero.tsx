@@ -8,9 +8,11 @@ export const Hero = ({title, content}) => {
                     <div className="hero__content">
                         <h1>{title}</h1>
 
-                        <p>
-                            {content}
-                        </p>
+                        <div className="hero__entry">
+                            <p>
+                                {content}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
