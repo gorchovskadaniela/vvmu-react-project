@@ -45,18 +45,10 @@ export const FormCreateArticle = () => {
                     </div>
 
                     <div className="form__row">
-                        <label className="form__label">Author email</label>
+                        <label className="form__label">Upload image link</label>
 
                         <div className="form__controls">
-                            <input type={"mail"} className="form__field" name="author-email" id="author-email"placeholder="Author email" />
-                        </div>
-                    </div>
-
-                    <div className="form__row">
-                        <label className="form__label">Upload image</label>
-
-                        <div className="form__controls">
-                            <input type={"file"} className="form__field form__field--upload" name="article-file-upload" id="article-file-upload" placeholder="Upload image" />
+                            <input type={"text"} className="form__field" name="image-link" id="image-link" placeholder="http://yourlink.com" />
                         </div>
                     </div>
                 </div>
