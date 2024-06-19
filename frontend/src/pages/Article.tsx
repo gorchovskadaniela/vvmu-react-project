@@ -33,13 +33,34 @@ export const Article = () => {
 
     return (
         <>
-            <Hero title="Create Article" content="Bla bla bla bla contacts" />
-            <h1>{article.title}</h1>
-            <h5>{article.content}</h5>
-            <p>Created by:{article.author}</p>
-            <button onClick={deleteArtile}>Delete this Article</button>
+            <Hero title={article.title} content="Bla bla bla bla contacts" />
+
+            <section className="section-article-single">
+                <div className="shell">
+                    <div className="section__inner">
+                        <div className="section__article">
+                            <div className="section__article-head">
+                                <h2>{article.title}</h2>
+                            </div>
+
+                            <div className="section__article-info">
+                                <div className="section__article-author">
+                                    {article.author}
+                                </div>
+
+                                <button className="section__article-delete" onClick={deleteArtile}>Delete this Article</button>
+                            </div>
+
+                            <div className="section__article-body">
+
+                                <div className="section__article-content">
+                                    {article.content}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
-
-
-)
+    )
 }
