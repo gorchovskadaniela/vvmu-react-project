@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import './ArticlesPrimary.scss';
+import './ArticlesPrimary.scss';
 import {ArticlePrimary} from '../article-primary/ArticlePrimary.tsx';
 
 export const ArticlesPrimary = () => {
