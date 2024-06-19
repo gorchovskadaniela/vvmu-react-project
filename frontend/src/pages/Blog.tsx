@@ -4,7 +4,7 @@ import {ArticlesPrimary} from "../components/articles-primary/ArticlesPrimary.ts
 export const Blog = () => {
     return (
         <>
-            <Hero title="Blog page" content="Bla bla bla bla blog" />
+            <Hero title="Blog page" content="Hello and welcome to our blog! We're thrilled to have you here. Whether you're a first-time visitor or a regular reader, we hope you find inspiration, insights, and enjoyment in our posts." />
 
             <section className="section-articles">
                 <div className="shell">

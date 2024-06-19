@@ -26,6 +26,8 @@
 		position: relative;
 		overflow: hidden;
 		border-radius: 16px;
+		height: 100%;
+		align-self: stretch;
 	}
 
 	.article__image img {

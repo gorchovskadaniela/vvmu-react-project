@@ -26,7 +26,7 @@ export const FormCreateArticle = () => {
 
         }).then();
 
-        navigation("/create-article")
+        navigation("/blog")
 
     }
 
