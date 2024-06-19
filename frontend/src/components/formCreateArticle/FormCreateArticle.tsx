@@ -3,7 +3,7 @@ import './FormCreateArticle.scss';
 import {useNavigate} from "react-router-dom";
 
 export const FormCreateArticle = () => {
-    const navigation = useNavigate();
+    const navigation = useNavigate()
     const {
         register,
         handleSubmit,
@@ -11,6 +11,7 @@ export const FormCreateArticle = () => {
     } = useForm();
 
     const onSubmit = (data: any) => {
+        console.log(data)
         fetch(`http://localhost:3073/api/news`, {
             method: "POST",
             headers: {
@@ -22,9 +23,11 @@ export const FormCreateArticle = () => {
                 author: data.author,
                 picture: data.picture
             })
+
         }).then();
 
         navigation("/create-article")
+
     }
 
     return (
@@ -55,7 +58,6 @@ export const FormCreateArticle = () => {
                         <label className="form__label">Author name</label>
 
                         <div className="form__controls">
-
                             <input {...register("author", )}  type={"text"} className="form__field"  id="article-author"placeholder="Author name" />
                         </div>
                     </div>
