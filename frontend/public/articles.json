@@ -1,0 +1,65 @@
+[
+	{
+		"id": 1,
+		"title": "Article 1",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quo eius atque labore perferendis incidunt ullam vitae repellat aut doloremque, aliquid deleniti voluptate ex. Est nulla possimus corporis architecto inventore.",
+		"author": "Article Author",
+		"picture": "../src/assets/image-1.jpeg"
+	},
+	{
+		"id": 2,
+		"title": "Article 2",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quo eius atque labore perferendis incidunt ullam vitae repellat aut doloremque, aliquid deleniti voluptate ex. Est nulla possimus corporis architecto inventore.",
+		"author": "Article Author",
+		"picture": "../src/assets/image-1.jpeg"
+	},
+	{
+		"id": 3,
+		"title": "Article 3",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quo eius atque labore perferendis incidunt ullam vitae repellat aut doloremque, aliquid deleniti voluptate ex. Est nulla possimus corporis architecto inventore.",
+		"author": "Article Author",
+		"picture": "../src/assets/image-1.jpeg"
+	},
+	{
+		"id": 4,
+		"title": "Article 4",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quo eius atque labore perferendis incidunt ullam vitae repellat aut doloremque, aliquid deleniti voluptate ex. Est nulla possimus corporis architecto inventore.",
+		"author": "Article Author",
+		"picture": "../src/assets/image-1.jpeg"
+	},
+	{
+		"id": 6,
+		"title": "Article 6",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quo eius atque labore perferendis incidunt ullam vitae repellat aut doloremque, aliquid deleniti voluptate ex. Est nulla possimus corporis architecto inventore.",
+		"author": "Article Author",
+		"picture": "../src/assets/image-1.jpeg"
+	},
+	{
+		"id": 7,
+		"title": "Article 7",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quo eius atque labore perferendis incidunt ullam vitae repellat aut doloremque, aliquid deleniti voluptate ex. Est nulla possimus corporis architecto inventore.",
+		"author": "Article Author",
+		"picture": "../src/assets/image-1.jpeg"
+	},
+	{
+		"id": 8,
+		"title": "Article 8",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quo eius atque labore perferendis incidunt ullam vitae repellat aut doloremque, aliquid deleniti voluptate ex. Est nulla possimus corporis architecto inventore.",
+		"author": "Article Author",
+		"picture": "../src/assets/image-1.jpeg"
+	},
+	{
+		"id": 9,
+		"title": "Article 9",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quo eius atque labore perferendis incidunt ullam vitae repellat aut doloremque, aliquid deleniti voluptate ex. Est nulla possimus corporis architecto inventore.",
+		"author": "Article Author",
+		"picture": "../src/assets/image-1.jpeg"
+	},
+	{
+		"id": 10,
+		"title": "Article 10",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quo eius atque labore perferendis incidunt ullam vitae repellat aut doloremque, aliquid deleniti voluptate ex. Est nulla possimus corporis architecto inventore.",
+		"author": "Article Author",
+		"picture": "../src/assets/image-1.jpeg"
+	}
+]
