@@ -4,6 +4,7 @@ export interface News {
 	content: string,
 	author: string,
 	createdAt: Date,
+	picture: string
 
 }
 

@@ -7,12 +7,19 @@ export class NewsModel extends DB {
         const [rows] = await this.conn.query("SELECT * FROM news");
         return rows;
     }
+    async getArticle(id:number) {
+        const [rows] = await this.conn.query("SELECT * FROM news WHERE id = ?"
+        , [id]);
+        console.log(rows)
+        return rows;
+    }
+
 
     async createNews(data: News) {
         await this.conn.execute(`
-            INSERT INTO news(title, content, author)
-            VALUES(? ,? ,?)
-        `,[data.title, data.content, data.author])
+            INSERT INTO news(title, content, author, picture)
+            VALUES(? ,? ,?, ?)
+        `,[data.title, data.content, data.author, data.picture])
     }
     async updateNews (id: number, data:NewsDomainModel) {
         const userPropArray = Object.entries(data);
