@@ -3,5 +3,11 @@
 \* ------------------------------------------------------------ */
 
 .articles-primary {
+	.articles__item {
+		margin-bottom: 60px;
 
+		&:last-child {
+			margin: 0;
+		}
+	}
 }
