@@ -33,7 +33,6 @@ export const Article = () => {
 
     return (
         <>
-<<<<<<< HEAD
             <Hero title={article.title} content="Bla bla bla bla contacts" />
 
             <section className="section-article-single">
@@ -65,15 +64,3 @@ export const Article = () => {
         </>
     )
 }
-=======
-            <Hero title="Create Article" content="Bla bla bla bla contacts" />
-            <h1>{article.title}</h1>
-            <h5>{article.content}</h5>
-            <p>Created by:{article.author}</p>
-            <button onClick={deleteArtile}>Delete this Article</button>
-        </>
-
-
-)
-}
->>>>>>> 4243c420016f4dee8f433def47c24fa3dcbb049b
